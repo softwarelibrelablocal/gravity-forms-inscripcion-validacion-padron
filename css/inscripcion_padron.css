@@ -1,0 +1,12 @@
+.mayusculas input {
+    text-transform: uppercase !important;
+}
+
+.margenizq {
+	padding-left: 3em !important;
+}
+
+.margenizq label {
+	color: #9b0707 !important;
+	font-size: 0.9em !important;
+}
