@@ -176,7 +176,7 @@ function obtener_anio_mes_nac(){
 function carga_combo_actividades(actividad,strcombo,numactividades,strinput){
 	//llamada ajax al webservice
 	//var actividad = '30';
-	var url = "http://10.194.100.140/mgdbq2json/wp-json/mg-dbq2json/v1/services?s=cursos_verano&u=GFhHGlB9v2mD&anionac=" + anionac + "&mesnac=" + mesnac + "&camp=" + camp + "&actividad=" + actividad;
+	var url = "http://10.194.100.140/json/wp-json/mg-dbq2json/v1/services?s=cursos_verano&u=223awefawdf3&anionac=" + anionac + "&mesnac=" + mesnac + "&camp=" + camp + "&actividad=" + actividad;
 	var parametros = {"url" : url};
 
 	jQuery.ajax({
@@ -263,7 +263,7 @@ function consulta_webservice(documento, fechanac){
 function buscaDniNie(documento,fechanac) {
 	var mensaje = '';
 	//llamada ajax al webservice
-	var url = "http://10.194.100.140/mgdbq2json/wp-json/mg-dbq2json/v1/services?s=padron_dni&u=GFhHGlB9v2mD&dni=" + documento + "&fechanac=" + fechanac;
+	var url = "http://10.194.100.140/json/wp-json/mg-dbq2json/v1/services?s=padron_dni&u=w3r23awef34&dni=" + documento + "&fechanac=" + fechanac;
 	var parametros = {"url" : url};
 	
 	jQuery.ajax({
