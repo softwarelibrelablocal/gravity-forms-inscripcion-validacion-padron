@@ -4,8 +4,8 @@ Este plugin es un ejemplo de utilización de formulario de Gravity Forms añadie
 
 ### Requisitos ###
 
-- Se debe tener instalado el plugin de WordPress **[Gravity Forms](https://www.gravityforms.com/ "Gravity Forms")**.
-- Se debe tener instalado el plugin de  **[Services Api Rest Generator](https://github.com/softwarelibrelablocal/services-api-rest-generator "Services Api Rest Generator")**.
+- Se debe tener instalado el plugin de WordPress **Gravity Forms**.
+- Se debe tener instalado el plugin de  **WP Api Web Services**.
 
 ### Instalación e Instrucciones ###
 
@@ -21,3 +21,4 @@ donde **xxx** será el id que le ha dado Gravity al formulario importado.
 **function validar_padron_documento(documento)**
 y definir la url del servicio web a su Padrón.
 `var url = "https://servidorwebservice/wp-json/mg-dbq2json/v1/services?s=padron-dni&u=FAwJQJOURawN&dni=" + documento;`
+
