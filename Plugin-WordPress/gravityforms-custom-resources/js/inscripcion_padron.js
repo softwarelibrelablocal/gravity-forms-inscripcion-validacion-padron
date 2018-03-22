@@ -30,7 +30,7 @@ jQuery(function() {
 function validar_padron_documento(documento){
 	//llamada ajax al webservice
 	//var actividad = '30';
-	var url = "https://servicios.rivasciudad.es/wp-json/mg-dbq2json/v1/services?s=padron-dni&u=FAwJQJOURawN&dni=" + documento;
+	var url = "https://tuservidorwebservice/wp-json/mg-dbq2json/v1/services?s=padron-dni&u=FAwJQJOURawN&dni=" + documento;
 
 	jQuery.ajax({
 		type : 'GET',
