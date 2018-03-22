@@ -4,8 +4,8 @@ Este plugin es un ejemplo de utilización de formulario de Gravity Forms añadie
 
 ### Requisitos ###
 
-- Se debe tener instalado el plugin de WordPress **Gravity Forms**.
-- Se debe tener instalado el plugin de  **WP Api Web Services**.
+- Se debe tener instalado el plugin de WordPress **[Gravity Forms](https://www.gravityforms.com/ "Gravity Forms")**.
+- Se debe tener instalado el plugin de  **[Services Api Rest Generator](https://github.com/softwarelibrelablocal/services-api-rest-generator "Services Api Rest Generator")**.
 
 ### Instalación e Instrucciones ###
 
