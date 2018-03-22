@@ -21,4 +21,3 @@ donde **xxx** será el id que le ha dado Gravity al formulario importado.
 **function validar_padron_documento(documento)**
 y definir la url del servicio web a su Padrón.
 `var url = "https://servidorwebservice/wp-json/mg-dbq2json/v1/services?s=padron-dni&u=FAwJQJOURawN&dni=" + documento;`
-
