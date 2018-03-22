@@ -4,8 +4,8 @@ Este plugin es un ejemplo de utilización de formulario de Gravity Forms añadie
 
 ### Requisitos ###
 
-- Se debe tener instalado el plugin de WordPress **Gravity Forms**.
-- Se debe tener instalado el plugin de  **WP Api Web Services**.
+- Se debe tener instalado el plugin de WordPress **[Gravity Forms](https://www.gravityforms.com/ "Gravity Forms")**.
+- Se debe tener instalado el plugin de  **[Services Api Rest Generator](https://github.com/softwarelibrelablocal/services-api-rest-generator "Services Api Rest Generator")**.
 
 ### Instalación e Instrucciones ###
 
@@ -15,10 +15,11 @@ Este plugin es un ejemplo de utilización de formulario de Gravity Forms añadie
 4. Una vez importado el formulario de Gravity acceda al menú Formularios para conocer el **ID** que se le ha asignado al formulario.
 5. Creé una nueva página (o post) e inserte el **shortcode** del formulario de Gravity importado.
 6. Edite el fichero **inscripcion_padron.js** y defina el id de formulario en:
-**var id_formulario_gravity = xxx;**
+`var id_formulario_gravity = xxx;`
 donde **xxx** será el id que le ha dado Gravity al formulario importado.
-6. En el mismo fichero cambiar la función:
+7. En el mismo fichero cambiar la función:
 **function validar_padron_documento(documento)**
 y definir la url del servicio web a su Padrón.
 `var url = "https://servidorwebservice/wp-json/mg-dbq2json/v1/services?s=padron-dni&u=FAwJQJOURawN&dni=" + documento;`
-
+8. En el plugin **Services Api Rest Generator** crear un nuevo Servicio que se llame **padron-dni** que tenga de entrada el parámetro {{dni}} y que devuelva las siguientes columnas: **NIF**, **NOMBRE** (string con el nombre compuest formato.: Apellido1\*Apellido2,Nombre ), **DIREC** y **FECNAC** 
+ 
