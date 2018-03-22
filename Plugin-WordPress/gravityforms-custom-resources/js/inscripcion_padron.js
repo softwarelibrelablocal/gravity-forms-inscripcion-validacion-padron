@@ -14,6 +14,11 @@ jQuery(function() {
 	jQuery('#validar_documento').click(function(){
 		var documento = jQuery('.numero_documento  input').val();
 		if(documento != ''){
+			if(!isNaN(documento)){
+				documento = gf_pad (documento, 9);
+				jQuery('.numero_documento  input').val(documento);
+			}			
+			
 			validar_padron_documento(documento);
 			
 		}
@@ -38,6 +43,8 @@ function validar_padron_documento(documento){
 			
 			if(respuesta['message'] ){
 				console.log('No hay registros');
+				jQuery('.flag input').val(0);			
+				gf_lanzar_gfvalidacion(id_formulario_gravity,reglas_validacion_gravity);
 				return false;
 			}else{
 				
